@@ -17,7 +17,7 @@ struct Loadingpage : View {
             Color.black.ignoresSafeArea()
              
             VStack{
-                Image(systemName: "d.circle")
+                Image(systemName: "star.circle")
                     .foregroundStyle(.white, .tertiary)
                     .font(.system(size: 90))
                     .rotationEffect(.degrees(isAnimated ? 360 : 0))
