@@ -11,8 +11,12 @@ struct ContentView: View {
     @State var crescendo = 1.0
     @State var result = "10"
     @State var teste = "10"
-    @State private var email = ""
-    @State private var password = ""
+     //Variavel privada (
+     //@State private var email = ""
+     //@State private var password = "")
+    @State  var email = ""
+    @State  var password = ""
+    
     var body: some View {
         
         
@@ -24,32 +28,33 @@ struct ContentView: View {
             HStack{
                 TextField("Binario", text: self.$email)
                     .foregroundColor(Color.black)
-                    .padding()
-                    .background(Color.gray)
+                    .frame(width: 280, height: 35)
+                    .background(Color.white)
                     .cornerRadius(10)
                     .opacity(40)
                 Button(action: {}) {
                     Image("back")
-                    
-                        .padding()
-                        .cornerRadius(10)
-                        .opacity(10)
+                        
+                        .frame(width: 75, height: 30)
+                        .background(Color.gray)
+                        .cornerRadius(5)
                 }
             }
             HStack{
                 TextField("Decimal", text: self.$password)
                     .foregroundColor(.black)
-                    .padding()
-                    .background(Color.gray)
-                    .cornerRadius(10)
+                    .frame(width: 280, height: 35)
+                    .background(Color.white)
+                    .cornerRadius(5)
                 
                 Button(action: {}) {
                     Image("copy")
                     
-                        .padding()
-                        .cornerRadius(10)
-                        .opacity(10)
+                        .frame(width: 75, height: 30)
+                        .background(Color.gray)
+                        .cornerRadius(5)
                 }
+                
             }
             HStack{
                 Text("Enter a binary number: ")
@@ -58,10 +63,34 @@ struct ContentView: View {
             
             HStack{
                 Button(action: {}) {
+                    Text("1")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                        .frame(width: 80, height: 35)
+                        .background(Color.gray)
+                        .cornerRadius(10)
+
+                }
+                            
+            }
+            HStack{
+                Button(action: {}) {
+                    Text("0")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                        .frame(width: 80, height: 35)
+                        .background(Color.gray)
+                        .cornerRadius(10)
+
+                }
+                            
+            }
+            HStack{
+                Button(action: {}) {
                     Text("Convert")
                         .font(.headline)
                         .foregroundColor(.white)
-                        .padding()
+                        .frame(width: 200, height: 35)
                         .background(Color.blue)
                         .cornerRadius(10)
 
