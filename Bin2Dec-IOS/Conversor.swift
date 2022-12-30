@@ -51,12 +51,6 @@ struct ContentView: View {
             HStack{
                 Text("Enter a binary number: ")
                     .font(.headline)
-                    .scaleEffect(crescendo)
-                    .animation(
-                    Animation
-                        .easeIn(duration: 3)
-                        .repeatCount(3)
-                        .delay(1))
             }
             
             HStack{
@@ -72,7 +66,6 @@ struct ContentView: View {
             }
             
             Spacer()
-            Spacer()
             HStack{
                 Button("by Ruan da Hora"){
                     
@@ -80,7 +73,7 @@ struct ContentView: View {
                 }
                 .foregroundColor(Color.white)
                 .padding(1)
-                .background(Color.orange)
+                .background(Color.blue)
                 .cornerRadius(10)
                 .scaleEffect(crescendo)
                 .animation(
