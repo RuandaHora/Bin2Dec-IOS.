@@ -11,7 +11,8 @@ struct ContentView: View {
     @State var crescendo = 1.0
     @State var result = "10"
     @State var teste = "10"
-    
+    @State private var email = ""
+    @State private var password = ""
     var body: some View {
         
         
@@ -20,58 +21,33 @@ struct ContentView: View {
                 Text("Binary to Decimal Converter")
                     .font(.headline)
             }
-            VStack (alignment: .leading,  spacing: 0) {
-                HStack{
-                    
-                    Text(result)
-                        .foregroundColor(Color.white)
-                        .padding(.horizontal)
-                        .background(Color.gray)
-                        .cornerRadius(10)
-                    
-                   
-                    Image(systemName: "r.circle")
-                        .foregroundColor(.black)
-                }
-                VStack (alignment: .leading,  spacing: 0) {
-                    HStack{
-                        
-                        Text(teste)
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal)
-                            .background(Color.gray)
-                            .cornerRadius(10)
-                        Image(systemName: "u.circle")
-                            .foregroundColor(.black)
-                    }
-                }
-                VStack (alignment: .leading,  spacing: 0) {
-                    HStack{
-                        
-                        Text(teste)
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal)
-                            .background(Color.gray)
-                            .cornerRadius(10)
-                        Image(systemName: "a.circle")
-                            .foregroundColor(.black)
-                    }
-                }
-                VStack (alignment: .leading,  spacing: 0) {
-                    HStack{
-                        
-                        Text(teste)
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal)
-                            .background(Color.gray)
-                            .cornerRadius(10)
-                        Image(systemName: "n.circle")
-                            .foregroundColor(.black)
-                    }
-                }
+            HStack{
+                TextField("Binario", text: self.$email)
+                    .foregroundColor(Color.black)
+                    .padding()
+                    .background(Color.gray)
+                    .cornerRadius(10)
+                    .opacity(40)
                 
+                Image("back")
+                    
+                    .padding()
+                    .cornerRadius(10)
+                    .opacity(10)
+                    
             }
-            Spacer()
+            HStack{
+                TextField("Decimal", text: self.$password)
+                    .foregroundColor(.black)
+                    .padding()
+                    .background(Color.gray)
+                    .cornerRadius(10)
+                
+                Image("copy")
+                    .padding()
+                    .cornerRadius(10)
+                    .opacity(10)
+            }
             HStack{
                 Text("Enter a binary number: ")
                     .font(.headline)
@@ -82,6 +58,19 @@ struct ContentView: View {
                         .repeatCount(3)
                         .delay(1))
             }
+            
+            HStack{
+                Button("Convert"){
+                    
+                }
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                
+            }
+            
             Spacer()
             Spacer()
             HStack{
