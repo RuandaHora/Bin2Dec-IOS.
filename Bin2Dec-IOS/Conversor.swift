@@ -26,14 +26,14 @@ struct ContentView: View {
             HStack{
                 Text("Binary to Decimal Converter")
                     .font(.headline)
+                    .foregroundColor(.primary)
             }
             HStack{
                 TextField("Binario", text: self.$email)
                     .foregroundColor(Color.black)
                     .frame(width: 280, height: 35)
                     .background(Color.white)
-                    .cornerRadius(10)
-                    .opacity(40)
+                    .cornerRadius(5)
                 Button(action: {}) {
                     Image("back")
                         
@@ -61,6 +61,7 @@ struct ContentView: View {
             HStack{
                 Text("Enter a binary number: ")
                     .font(.headline)
+                    .foregroundColor(.primary)
             }
             
             HStack{
