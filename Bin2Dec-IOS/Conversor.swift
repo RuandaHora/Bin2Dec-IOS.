@@ -28,13 +28,13 @@ struct ContentView: View {
                     .background(Color.gray)
                     .cornerRadius(10)
                     .opacity(40)
-                
-                Image("back")
+                Button(action: {}) {
+                    Image("back")
                     
-                    .padding()
-                    .cornerRadius(10)
-                    .opacity(10)
-                    
+                        .padding()
+                        .cornerRadius(10)
+                        .opacity(10)
+                }
             }
             HStack{
                 TextField("Decimal", text: self.$password)
@@ -43,10 +43,13 @@ struct ContentView: View {
                     .background(Color.gray)
                     .cornerRadius(10)
                 
-                Image("copy")
-                    .padding()
-                    .cornerRadius(10)
-                    .opacity(10)
+                Button(action: {}) {
+                    Image("copy")
+                    
+                        .padding()
+                        .cornerRadius(10)
+                        .opacity(10)
+                }
             }
             HStack{
                 Text("Enter a binary number: ")
@@ -54,34 +57,34 @@ struct ContentView: View {
             }
             
             HStack{
-                Button("Convert"){
-                    
+                Button(action: {}) {
+                    Text("Convert")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+
                 }
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                
+                            
             }
             
             Spacer()
             HStack{
-                Button("by Ruan da Hora"){
-                    
-                    
+                Button(action: {}) {
+                    Text("by Ruan da Hora")
+                    .foregroundColor(Color.white)
+                    .padding(1)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                    .scaleEffect(crescendo)
+                    .animation(
+                    Animation
+                        .easeIn(duration: 3)
+                        .repeatCount(3)
+                        .delay(2)
+                    )
                 }
-                .foregroundColor(Color.white)
-                .padding(1)
-                .background(Color.blue)
-                .cornerRadius(10)
-                .scaleEffect(crescendo)
-                .animation(
-                Animation
-                    .easeIn(duration: 3)
-                    .repeatCount(3)
-                    .delay(2)
-                )
             }
             .onAppear{
                 self.crescendo -= 0.1
