@@ -16,6 +16,8 @@ struct ContentView: View {
      //@State private var password = "")
     @State  var email = ""
     @State  var password = ""
+    @State var numero1 = ""
+    @State var numero2 = ""
     
     var body: some View {
         
@@ -62,27 +64,23 @@ struct ContentView: View {
             }
             
             HStack{
-                Button(action: {}) {
-                    Text("1")
+            
+                TextField("0", text: self.$numero1)
                         .font(.headline)
                         .foregroundColor(.blue)
                         .frame(width: 80, height: 35)
                         .background(Color.gray)
                         .cornerRadius(10)
-
-                }
                             
             }
             HStack{
-                Button(action: {}) {
-                    Text("0")
+               
+                TextField("0", text: self.$numero2)
                         .font(.headline)
                         .foregroundColor(.blue)
                         .frame(width: 80, height: 35)
                         .background(Color.gray)
                         .cornerRadius(10)
-
-                }
                             
             }
             HStack{
