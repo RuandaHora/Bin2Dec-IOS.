@@ -32,7 +32,7 @@ struct ContentView: View {
                     Button(action: {}) {
                         Image(systemName:"moon.circle")
                             .foregroundColor(.primary)
-
+                            .font(.system(size: 20))
                     }
                 }
                 HStack{
