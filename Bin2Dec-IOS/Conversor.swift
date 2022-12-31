@@ -20,9 +20,9 @@ struct ContentView: View {
     @State var numero2 = ""
     
     var body: some View {
-        
-        
+       
         VStack {
+            
             HStack{
                 Text("Binary to Decimal Converter")
                     .font(.headline)
@@ -34,6 +34,7 @@ struct ContentView: View {
                     .frame(width: 280, height: 35)
                     .background(Color.white)
                     .cornerRadius(5)
+                
                 Button(action: {}) {
                     Image("back")
                         
@@ -74,6 +75,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                             
             }
+            
             HStack{
                
                 TextField("0", text: self.$numero2)
@@ -84,6 +86,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                             
             }
+
             HStack{
                 Button(action: {}) {
                     Text("Convert")
@@ -117,9 +120,11 @@ struct ContentView: View {
             .onAppear{
                 self.crescendo -= 0.1
             }
-            
         }
-        
+        RoundedRectangle(cornerRadius: 25.0)
+        .fill(Color("CustomColor"))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea()
     }
 }
 
