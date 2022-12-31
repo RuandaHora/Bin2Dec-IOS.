@@ -39,7 +39,7 @@ struct ContentView: View {
                     Image("back")
                         
                         .frame(width: 75, height: 30)
-                        .background(Color.gray)
+                        .background(Color("Icones"))
                         .cornerRadius(5)
                 }
             }
@@ -54,7 +54,7 @@ struct ContentView: View {
                     Image("copy")
                     
                         .frame(width: 75, height: 30)
-                        .background(Color.gray)
+                        .background(Color("Icones"))
                         .cornerRadius(5)
                 }
                 
@@ -71,7 +71,7 @@ struct ContentView: View {
                         .font(.headline)
                         .foregroundColor(.blue)
                         .frame(width: 80, height: 35)
-                        .background(Color.gray)
+                        .background(Color("Color"))
                         .cornerRadius(10)
                             
             }
@@ -82,7 +82,7 @@ struct ContentView: View {
                         .font(.headline)
                         .foregroundColor(.blue)
                         .frame(width: 80, height: 35)
-                        .background(Color.gray)
+                        .background(Color("Color"))
                         .cornerRadius(10)
                             
             }
@@ -121,7 +121,7 @@ struct ContentView: View {
                 self.crescendo -= 0.1
             }
         }
-        RoundedRectangle(cornerRadius: 25.0)
+        RoundedRectangle(cornerRadius: 0)
         .fill(Color("CustomColor"))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
