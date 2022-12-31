@@ -16,13 +16,17 @@ struct ContentView: View {
      //@State private var password = "")
     @State  var email = ""
     @State  var password = ""
-    @State var numero1 = ""
-    @State var numero2 = ""
+    @State var numero1 = "       1"
+    @State var numero2 = "       0"
     
+    @State var DarkMode = "CustomColor"
+    @State var Ligth = "Ligth"
+    @State var Dark =  "Dark"
+
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
-            .fill(Color("CustomColor"))
+            .fill(Color(DarkMode))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             
@@ -33,8 +37,9 @@ struct ContentView: View {
                         Image(systemName:"moon.circle")
                             .foregroundColor(.primary)
                             .font(.system(size: 20))
-                    }
+                        
                 }
+                    }
                 HStack{
                     Text("Binary to Decimal Converter")
                         .font(.headline)
