@@ -11,9 +11,7 @@ struct ContentView: View {
     @State var crescendo = 1.0
     @State var result = "10"
     @State var teste = "10"
-     //Variavel privada (
-     //@State private var email = ""
-     //@State private var password = "")
+    
     @State  var email = ""
     @State  var password = ""
     @State var numero1 = "       1"
@@ -103,6 +101,7 @@ struct ContentView: View {
                         .cornerRadius(5)
                     
                 }
+    
                 HStack{
                     Button(action: {}) {
                         
@@ -115,7 +114,6 @@ struct ContentView: View {
                         
                     }
                 }
-                
                 Spacer()
                 HStack{
                     Button(action: {}) {
