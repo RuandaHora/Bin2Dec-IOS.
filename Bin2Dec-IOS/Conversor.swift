@@ -14,8 +14,6 @@ struct ContentView: View {
     
     @State  var email = ""
     @State  var password = ""
-    @State var numero1 = "       1"
-    @State var numero2 = "       0"
     
     @State var DarkMode = "CustomColor"
     @State var Ligth = "Ligth"
@@ -83,23 +81,27 @@ struct ContentView: View {
                 
                 HStack{
                     
-                    TextField("0", text: self.$numero1)
+                    Button(action: {}){
+                        Text("1")
+                        
                         .font(.headline)
                         .foregroundColor(.blue)
                         .frame(width: 70, height: 30)
                         .background(Color("Color"))
                         .cornerRadius(5)
-                    
+                    }
                 }
                 HStack{
                     
-                    TextField("0", text: self.$numero2)
-                        .font(.headline)
-                        .foregroundColor(.blue)
-                        .frame(width: 70, height: 30)
-                        .background(Color("Color"))
-                        .cornerRadius(5)
-                    
+                    Button(action: {}){
+                        Text("0")
+                        
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                            .frame(width: 70, height: 30)
+                            .background(Color("Color"))
+                            .cornerRadius(5)
+                    }
                 }
     
                 HStack{
