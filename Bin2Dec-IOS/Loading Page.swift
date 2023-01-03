@@ -12,13 +12,19 @@ struct Loadingpage : View {
     //Variaveis
     @State var isAnimated = false
     @State var crescendo = 1.0
+    
+    @State var color = "Loading"
+    
     var body: some View {
         ZStack{
-            Color.black.ignoresSafeArea()
+            RoundedRectangle(cornerRadius: 0)
+                .fill(Color("Loading2"))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea()
              
             VStack{
                 Image(systemName: "star.circle")
-                    .foregroundStyle(.white, .tertiary)
+                    .foregroundColor(Color(color))
                     .font(.system(size: 90))
                     .rotationEffect(.degrees(isAnimated ? 360 : 0))
                     .animation(

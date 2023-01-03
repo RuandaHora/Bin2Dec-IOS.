@@ -9,17 +9,18 @@ struct ContentView: View {
     //Variaveis
     
     @State var crescendo = 1.0
-    @State var result = "10"
-    @State var teste = "10"
     
     @State  var Binary = ""
-    @State  var password = ""
+    @State  var Decimal = ""
     
     
     @State var DarkMode = "CustomColor"
     @State var Ligth = "Ligth"
     @State var Dark =  "Dark"
-
+    
+    func converter () {
+        Decimal =  Binary
+    }
     
     var body: some View {
         ZStack{
@@ -57,7 +58,7 @@ struct ContentView: View {
                     }
                 }
                 HStack{
-                    TextField("Decimal", text: self.$password)
+                    TextField("Decimal", text: self.$Decimal)
                         .foregroundColor(.black)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
@@ -105,8 +106,7 @@ struct ContentView: View {
                 }
     
                 HStack{
-                    Button(action: {
-                    }) {
+                    Button(action: {converter()}) {
                       
                         Text("Convert")
                             .font(.headline)
