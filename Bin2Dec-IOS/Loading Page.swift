@@ -16,12 +16,12 @@ struct Loadingpage : View {
     @State var color = "Loading"
     
     var body: some View {
+        
         ZStack{
             RoundedRectangle(cornerRadius: 0)
                 .fill(Color(.black))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
-             
             VStack{
                 Image(systemName: "star.circle")
                     .foregroundColor(Color(color))

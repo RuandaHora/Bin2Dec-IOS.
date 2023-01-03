@@ -18,6 +18,13 @@ struct ContentView: View {
     @State var Ligth = "Ligth"
     @State var Dark =  "Dark"
     
+    func dark(){
+        RoundedRectangle(cornerRadius: 0)
+        .fill(Color(DarkMode))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea()
+    }
+    
     func converter () {
         Decimal =  Binary
     }
@@ -33,8 +40,14 @@ struct ContentView: View {
                 HStack{
                     Text("                                                            ")
                     Button(action: {}) {
-                        ExtractedView()
-                        
+                        Image(systemName: "star.circle")
+                            .foregroundColor(.primary)
+                            .font(.system(size: 25))
+                    }
+                    Button(action: {DarkMode}) {
+                            Image(systemName: "moon.circle")
+                                .foregroundColor(.primary)
+                                .font(.system(size: 25))
                 }
                     }
                 HStack{
@@ -45,7 +58,7 @@ struct ContentView: View {
                 }
                 HStack{
                     TextField("Binario", text: self.$Binary)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.primary)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
                         .cornerRadius(5)
@@ -59,7 +72,7 @@ struct ContentView: View {
                 }
                 HStack{
                     TextField("Decimal", text: self.$Decimal)
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
                         .cornerRadius(5)
@@ -149,8 +162,10 @@ struct ContentView_Previews: PreviewProvider {
 
 struct ExtractedView: View {
     var body: some View {
-        Image(systemName:"moon.circle")
-            .foregroundColor(.primary)
+        HStack {
+            Image(systemName:"moon.circle")
+                .foregroundColor(.primary)
             .font(.system(size: 20))
+        }
     }
 }
