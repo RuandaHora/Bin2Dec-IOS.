@@ -12,13 +12,15 @@ struct ContentView: View {
     @State var result = "10"
     @State var teste = "10"
     
-    @State  var email = ""
+    @State  var Binary = ""
     @State  var password = ""
+    
     
     @State var DarkMode = "CustomColor"
     @State var Ligth = "Ligth"
     @State var Dark =  "Dark"
 
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
@@ -30,9 +32,7 @@ struct ContentView: View {
                 HStack{
                     Text("                                                            ")
                     Button(action: {}) {
-                        Image(systemName:"moon.circle")
-                            .foregroundColor(.primary)
-                            .font(.system(size: 20))
+                        ExtractedView()
                         
                 }
                     }
@@ -43,12 +43,11 @@ struct ContentView: View {
                     Text("                               ")
                 }
                 HStack{
-                    TextField("Binario", text: self.$email)
+                    TextField("Binario", text: self.$Binary)
                         .foregroundColor(Color.black)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
                         .cornerRadius(5)
-                    
                     Button(action: {}) {
                         Image("back")
                         
@@ -105,8 +104,11 @@ struct ContentView: View {
                 }
     
                 HStack{
-                    Button(action: {}) {
-                        
+                    Button(action: {
+                        print("Botao apartado")
+                       
+                    }) {
+                      
                         Text("Convert")
                             .font(.headline)
                             .foregroundColor(.white)
@@ -143,5 +145,13 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct ExtractedView: View {
+    var body: some View {
+        Image(systemName:"moon.circle")
+            .foregroundColor(.primary)
+            .font(.system(size: 20))
     }
 }
