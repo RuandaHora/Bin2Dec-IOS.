@@ -80,7 +80,8 @@ struct ContentView: View {
                 
                 HStack{
                     
-                    Button(action: {}){
+                    Button(action: {Binary += "1"}){
+                        
                         Text("1")
                         
                         .font(.headline)
@@ -92,7 +93,7 @@ struct ContentView: View {
                 }
                 HStack{
                     
-                    Button(action: {}){
+                    Button(action: {Binary += "0"}){
                         Text("0")
                         
                             .font(.headline)
@@ -105,8 +106,6 @@ struct ContentView: View {
     
                 HStack{
                     Button(action: {
-                        print("Botao apartado")
-                       
                     }) {
                       
                         Text("Convert")
