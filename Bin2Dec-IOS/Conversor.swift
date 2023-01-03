@@ -48,7 +48,7 @@ struct ContentView: View {
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
                         .cornerRadius(5)
-                    Button(action: {}) {
+                    Button(action: {Binary = ""}) {
                         Image("back")
                         
                             .frame(width: 75, height: 30)
