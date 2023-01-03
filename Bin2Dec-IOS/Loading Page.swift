@@ -18,7 +18,7 @@ struct Loadingpage : View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
-                .fill(Color("Loading2"))
+                .fill(Color(.black))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
              
