@@ -50,11 +50,14 @@ struct ContentView: View {
                                 .font(.system(size: 25))
                 }
                     }
-                HStack{
-                    Text("Binary to Decimal Converter")
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                    Text("                               ")
+                VStack{
+                    HStack{
+                        Text("Binary to Decimal Converter")
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                        Spacer()
+                    }
+                    Divider()
                 }
                 HStack{
                     TextField("Binario", text: self.$Binary)
@@ -86,7 +89,8 @@ struct ContentView: View {
                     }
                     
                 }
-                HStack{
+                VStack{
+                    Divider()
                     Text("Enter a binary number: ")
                         .font(.headline)
                         .foregroundColor(.primary)
