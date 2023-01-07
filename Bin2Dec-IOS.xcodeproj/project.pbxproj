@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88810B6A295E8E100072770C /* Loading Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88810B69295E8E100072770C /* Loading Page.swift */; };
+		88E05636296933EC006D2DEE /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E05635296933EC006D2DEE /* GeneralView.swift */; };
 		88E0A0AD295E8C8600B36424 /* Bin2Dec_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0A0AC295E8C8600B36424 /* Bin2Dec_IOSApp.swift */; };
 		88E0A0AF295E8C8600B36424 /* Conversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0A0AE295E8C8600B36424 /* Conversor.swift */; };
 		88E0A0B1295E8C8800B36424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E0A0B0295E8C8800B36424 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		88810B69295E8E100072770C /* Loading Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loading Page.swift"; sourceTree = "<group>"; };
+		88E05635296933EC006D2DEE /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		88E0A0A9295E8C8600B36424 /* Bin2Dec-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bin2Dec-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E0A0AC295E8C8600B36424 /* Bin2Dec_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bin2Dec_IOSApp.swift; sourceTree = "<group>"; };
 		88E0A0AE295E8C8600B36424 /* Conversor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversor.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 		88E0A0A0295E8C8600B36424 = {
 			isa = PBXGroup;
 			children = (
+				88E05635296933EC006D2DEE /* GeneralView.swift */,
 				88E0A0AB295E8C8600B36424 /* Bin2Dec-IOS */,
 				88E0A0AA295E8C8600B36424 /* Products */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88810B6A295E8E100072770C /* Loading Page.swift in Sources */,
+				88E05636296933EC006D2DEE /* GeneralView.swift in Sources */,
 				88E0A0AF295E8C8600B36424 /* Conversor.swift in Sources */,
 				88E0A0AD295E8C8600B36424 /* Bin2Dec_IOSApp.swift in Sources */,
 			);

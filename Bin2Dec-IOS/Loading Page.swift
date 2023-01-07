@@ -16,7 +16,6 @@ struct Loadingpage : View {
     @State var color = "Loading"
     
     var body: some View {
-        
         ZStack{
             RoundedRectangle(cornerRadius: 0)
                 .fill(Color(.black))
