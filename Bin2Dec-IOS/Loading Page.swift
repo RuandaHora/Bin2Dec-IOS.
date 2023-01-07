@@ -23,14 +23,16 @@ struct Loadingpage : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             VStack{
-                Image(systemName: "star.circle")
-                    .foregroundColor(Color(color))
-                    .font(.system(size: 90))
-                    .rotationEffect(.degrees(isAnimated ? 360 : 0))
-                    .animation(
-                        .easeInOut(duration: 1.3)
-                        .repeatForever(autoreverses: false),
-                        value: isAnimated)
+                Button(action: {}) {
+                    Image(systemName: "star.circle")
+                        .foregroundColor(Color(color))
+                        .font(.system(size: 90))
+                        .rotationEffect(.degrees(isAnimated ? 360 : 0))
+                        .animation(
+                            .easeInOut(duration: 1.3)
+                            .repeatForever(autoreverses: false),
+                            value: isAnimated)
+                }
                 Text("")
                 
                 Button("Valeu Natalina!"){
