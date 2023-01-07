@@ -1,7 +1,3 @@
-// Conversor.swift
-//  Converter Binario para decimal
-//  Created by Ruan da Hora on 28/12/22.
-
 import SwiftUI
 
 struct ContentView: View {
