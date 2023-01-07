@@ -22,30 +22,25 @@ struct Loadingpage : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             VStack{
-                Button(action: {}) {
-                    Image(systemName: "star.circle")
-                        .foregroundColor(Color(color))
-                        .font(.system(size: 90))
-                        .rotationEffect(.degrees(isAnimated ? 360 : 0))
-                        .animation(
-                            .easeInOut(duration: 1.3)
-                            .repeatForever(autoreverses: false),
-                            value: isAnimated)
-                }
-                Text("")
                 
-                Button("Valeu Natalina!"){
-                    
+                    Button(action: {}) {
+                        Image(systemName: "star.circle")
+                            .foregroundColor(Color(color))
+                            .font(.system(size: 90))
+                            .rotationEffect(.degrees(isAnimated ? 360 : 0))
+                            .animation(
+                                .easeInOut(duration: 1.3)
+                                .repeatForever(autoreverses: false),
+                                value: isAnimated)
+                    }
+                Text("")
+                NavigationLink (destination: ContentView()) {
+                    Text ("Valeu Natalina!")
+                        .foregroundColor(Color.gray)
+                        .fontDesign(.monospaced)
+                        .foregroundColor(Color.white)
                 }
-                    .foregroundColor(Color.gray)
-                    .fontDesign(.monospaced)
-                    .foregroundColor(Color.white)
-                    .scaleEffect(crescendo)
-                    .animation(
-                    Animation
-                        .easeIn(duration: 3)
-                        .repeatCount(3)
-                    )
+                     
                 }
                 .onAppear{
                     self.crescendo += 0.1

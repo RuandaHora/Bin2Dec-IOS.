@@ -9,12 +9,8 @@ import SwiftUI
 
 struct GeneralView: View {
     var body: some View {
-        NavigationView {
-            Loadingpage()
-        }
         NavigationView{
-            
-            ContentView();
+            Loadingpage()
             
         }
         

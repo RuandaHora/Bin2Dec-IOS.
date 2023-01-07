@@ -37,19 +37,6 @@ struct ContentView: View {
             .ignoresSafeArea()
             
             VStack {
-                HStack{
-                    Text("                                                            ")
-                    Button(action: {}) {
-                        Image(systemName: "star.circle")
-                            .foregroundColor(.primary)
-                            .font(.system(size: 25))
-                    }
-                    Button(action: {DarkMode}) {
-                            Image(systemName: "moon.circle")
-                                .foregroundColor(.primary)
-                                .font(.system(size: 25))
-                }
-                    }
                 VStack{
                     HStack{
                         Text("Binary to Decimal Converter")
