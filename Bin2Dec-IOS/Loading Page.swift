@@ -15,7 +15,7 @@ struct Loadingpage : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             VStack{
-                
+                NavigationLink (destination: ContentView()) {
                     Button(action: {}) {
                         Image(systemName: "star.circle")
                             .foregroundColor(Color(color))
@@ -26,6 +26,7 @@ struct Loadingpage : View {
                                 .repeatForever(autoreverses: false),
                                 value: isAnimated)
                     }
+                }
                 Text("")
                 NavigationLink (destination: ContentView()) {
                     Text ("Valeu Natalina!")
