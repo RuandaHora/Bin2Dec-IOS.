@@ -108,7 +108,7 @@ struct ContentView: View {
                 HStack{
                     Button(action: {converter()}) {
                       
-                        Text("Teste")
+                        Text("Convert")
                             .font(.headline)
                             .foregroundColor(.white)
                             .frame(width: 200, height: 35)
