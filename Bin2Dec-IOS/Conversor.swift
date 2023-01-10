@@ -8,7 +8,6 @@ struct ContentView: View {
     
     @State  var Binary = ""
     @State  var Decimal = ""
-
     @State var DarkMode = "CustomColor"
     @State var Ligth = "Ligth"
     @State var Dark =  "Dark"
@@ -18,10 +17,6 @@ struct ContentView: View {
         .fill(Color(DarkMode))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
-    }
-    
-    func bin2dec (){
-        
     }
     
     func converter () {
