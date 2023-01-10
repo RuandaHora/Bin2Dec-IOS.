@@ -74,7 +74,7 @@ struct ContentView: View {
                 }
                 VStack{
                     Divider()
-                    Text("Enter a binary number: ")
+                    Text("Enter a binary number:")
                         .font(.headline)
                         .foregroundColor(.primary)
                 }
