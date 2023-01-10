@@ -21,7 +21,7 @@ struct ContentView: View {
     }
     
     func bin2dec (){
-        Binary = Decimal
+        
     }
     
     func converter () {

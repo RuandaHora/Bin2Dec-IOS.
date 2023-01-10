@@ -29,7 +29,7 @@ struct Loadingpage : View {
                 }
                 Text("")
                 NavigationLink (destination: ContentView()) {
-                    Text ("Valeu Natalina!")
+                    Text ("Click Here!")
                         .foregroundColor(Color.gray)
                         .fontDesign(.monospaced)
                         .foregroundColor(Color.white)
