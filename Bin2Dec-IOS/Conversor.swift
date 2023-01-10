@@ -8,8 +8,7 @@ struct ContentView: View {
     
     @State  var Binary = ""
     @State  var Decimal = ""
-    
-    
+
     @State var DarkMode = "CustomColor"
     @State var Ligth = "Ligth"
     @State var Dark =  "Dark"
@@ -19,6 +18,10 @@ struct ContentView: View {
         .fill(Color(DarkMode))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
+    }
+    
+    func bin2dec (){
+        Binary = Decimal
     }
     
     func converter () {
@@ -43,7 +46,7 @@ struct ContentView: View {
                     Divider()
                 }
                 HStack{
-                    TextField("Binario", text: self.$Binary)
+                    TextField("Binary", text: self.$Binary)
                         .foregroundColor(Color.primary)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
