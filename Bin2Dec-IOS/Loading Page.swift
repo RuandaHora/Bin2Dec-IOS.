@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct Loadingpage : View {
-    
     //Variaveis
     @State var isAnimated = false
     @State var crescendo = 1.0

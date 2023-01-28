@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88810B6A295E8E100072770C /* Loading Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88810B69295E8E100072770C /* Loading Page.swift */; };
+		88D7D19729852ED600DE7F17 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D19629852ED600DE7F17 /* Test.swift */; };
 		88E05636296933EC006D2DEE /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E05635296933EC006D2DEE /* GeneralView.swift */; };
 		88E0A0AD295E8C8600B36424 /* Bin2Dec_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0A0AC295E8C8600B36424 /* Bin2Dec_IOSApp.swift */; };
 		88E0A0AF295E8C8600B36424 /* Conversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0A0AE295E8C8600B36424 /* Conversor.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		88810B69295E8E100072770C /* Loading Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loading Page.swift"; sourceTree = "<group>"; };
+		88D7D19629852ED600DE7F17 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		88E05635296933EC006D2DEE /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		88E0A0A9295E8C8600B36424 /* Bin2Dec-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bin2Dec-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E0A0AC295E8C8600B36424 /* Bin2Dec_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bin2Dec_IOSApp.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				88E0A0AE295E8C8600B36424 /* Conversor.swift */,
 				88E0A0B0295E8C8800B36424 /* Assets.xcassets */,
 				88E0A0B2295E8C8800B36424 /* Preview Content */,
+				88D7D19629852ED600DE7F17 /* Test.swift */,
 			);
 			path = "Bin2Dec-IOS";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				88810B6A295E8E100072770C /* Loading Page.swift in Sources */,
 				88E05636296933EC006D2DEE /* GeneralView.swift in Sources */,
+				88D7D19729852ED600DE7F17 /* Test.swift in Sources */,
 				88E0A0AF295E8C8600B36424 /* Conversor.swift in Sources */,
 				88E0A0AD295E8C8600B36424 /* Bin2Dec_IOSApp.swift in Sources */,
 			);

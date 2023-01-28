@@ -12,6 +12,8 @@ struct ContentView: View {
     @State var Ligth = "Ligth"
     @State var Dark =  "Dark"
     
+    @State private var binaryInput = ""
+    
     func dark(){
         RoundedRectangle(cornerRadius: 0)
         .fill(Color(DarkMode))
@@ -24,6 +26,7 @@ struct ContentView: View {
     }
     
     var body: some View {
+        
         ZStack{
             RoundedRectangle(cornerRadius: 0)
             .fill(Color(DarkMode))
@@ -42,6 +45,7 @@ struct ContentView: View {
                 }
                 HStack{
                     TextField("Binary", text: self.$Binary)
+                        .keyboardType(.numberPad)
                         .foregroundColor(Color.primary)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
@@ -55,7 +59,7 @@ struct ContentView: View {
                     }
                 }
                 HStack{
-                    TextField("Decimal", text: self.$Decimal)
+                    TextField ("Decimal", text: self.$Decimal)
                         .foregroundColor(.primary)
                         .frame(width: 280, height: 35)
                         .background(Color("CustomColor"))
@@ -136,6 +140,9 @@ struct ContentView: View {
                 self.crescendo -= 0.1
             }
         }
+    }
+    func binaryToDecimal(binary: String) -> Int {
+        return Int(strtoul(binary, nil, 2))
     }
 }
 
